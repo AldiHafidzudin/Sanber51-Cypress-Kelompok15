@@ -3,6 +3,16 @@
     "cypress": "^13.6.0"
   },
   "dependencies": {
-    "git": "^0.1.5"
-  }
+    "git": "^0.1.5",
+    "mime": "^3.0.0"
+  },
+  "name": "qasanbercode",
+  "description": "Projek Quality Assurance Sanbercode Batch 51 Kelompok 15",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
