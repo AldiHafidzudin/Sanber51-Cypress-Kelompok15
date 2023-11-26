@@ -9,7 +9,7 @@ describe('Process to Checkout on Magento', () => {
 
     //Case 1
     // pertama kali checkout product
-    it.only('First time checkout Product', () => { //Note jika belum pernah melakukan checkout dan ada product di chart
+    it('First time checkout Product', () => { //Note jika belum pernah melakukan checkout dan ada product di chart
         ProcessToCheckOut.SignIn()
 
         //read json file fixture
@@ -38,9 +38,9 @@ describe('Process to Checkout on Magento', () => {
         ProcessToCheckOut.Fill_Add2(add2)
         ProcessToCheckOut.Fill_Add3(add3)
         ProcessToCheckOut.Fill_City(city)
-        ProcessToCheckOut.Fill_Reg1(2)
+        ProcessToCheckOut.Fill_Reg1('Alabama')
         ProcessToCheckOut.Fill_Post(Post)
-        ProcessToCheckOut.Fill_Reg2(2)
+        ProcessToCheckOut.Fill_Reg2('United States')
         ProcessToCheckOut.Fill_Phone(Phone)
         ProcessToCheckOut.Radio_Btn1()
         ProcessToCheckOut.Next_Btn()
