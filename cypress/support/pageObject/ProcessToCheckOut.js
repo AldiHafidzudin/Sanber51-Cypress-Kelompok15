@@ -5,14 +5,14 @@ class ProcessToCheckOut{
     loginBtn = '.login-container > .block-customer-login > .block-content > #login-form > .fieldset > .actions-toolbar > div.primary > #send2'
     chartBtn = '.showcart'
     checkOutBtn1 = '.action.primary.checkout'
-    fillComp = 'Company'
+    fillComp = '[name="shippingAddress.company"]'
     fillAdd1 = '[name="street[0]"]'
     fillAdd2 = '[name="street[1]"]'
     fillAdd3 = '[name="street[2]"]'
     fillCity = '[name="city"]'
     fillReg1 = '[name="region_id"]'
     fillPost = '[name="postcode"]'
-    fillReg2 = '[name="region_id"]'
+    fillReg2 = '[name="country_id"]'
     fillPhone = '[name="telephone"]'
     radioBtn1 = 'tbody > :nth-child(1) > :nth-child(1)'
     nextBtn = '.button.action.continue.primary'
@@ -52,13 +52,13 @@ class ProcessToCheckOut{
         cy.get(this.fillCity).click().type(FillCity)
     }
     Fill_Reg1(FillReg1){
-        cy.get(this.fillReg1).click().type(FillReg1)
+        cy.get(this.fillReg1).select(FillReg1)
     }
     Fill_Post(FillPost){
         cy.get(this.fillPost).click().type(FillPost)
     }
     Fill_Reg2(FillReg2){
-        cy.get(this.fillReg2).click().type(FillReg2)
+        cy.get(this.fillReg2).select(FillReg2)
     }
     Fill_Phone(FillPhone){
         cy.get(this.fillPhone).click().type(FillPhone)
